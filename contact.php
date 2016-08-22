@@ -1,0 +1,297 @@
+<?php
+if($_POST["submit"]) {
+	$recipient="thomas.r.anderson010@gmail.com";
+	$subject="Crossroads contact us message";
+	$contactSubject=$_POST["contactSubject"];
+	$sender=$_POST["senderFname", "senderLname"];
+	$address=$_POST["address", "city", "state", "zip"];
+	$phonenumber["pnumber"];
+	$senderEmail=$_POST["senderEmail"];
+
+	$mailBody="Name: $sender\nEmail: $senderEmail\nAddress: $address\nPhone Number: $phonenumber";
+
+	mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
+
+	$thankYou="<h3>Thank you! Your message has been sent.</h3>";
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Crossroads United Methodist Church</title>
+
+	<!-- bootstrap theme -->
+	<link rel="stylesheet" href="css/bootstrap-theme.css">
+
+	<!-- bootstrap css -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+	<!-- crossroads css -->
+	<link type="text/css" rel="stylesheet" href="css/styles.css">
+	
+	<!-- javascript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<script type="text/javascript">
+    function myFunction() {
+    	document.getElementById("myDropdown").classList.toggle("show");
+    }
+    	window.onclick = function(event) {
+    		if (!event.target.matches('.dropbtn')) {
+
+    			var dropdowns = document.getElementsByClassName("dropdown-menu");
+    			var i;
+    			for (i = 0; i < dropdowns.length; i++) {
+    				var openDropdown = dropdowns[i];
+    				if (openDropdown.classList.contains('show')){
+    					openDropdown.classList.remove('show');
+    				}
+    			}
+    		}
+    	}
+    </script>
+
+</head>
+<body>
+	<div class="container-fluid">
+	<!-- Fixed Navigation -->
+		<nav class="navbar navbar-custom navbar-fixed-top box-shadow-nav">
+			
+		<!-- Mobile Nav Hamburger btn -->
+
+			<div id="mobile-nav" class="dropdown">
+				<button onclick="myFunction()" class="btn btn-custom btn-lg dropdown-toggle" type="button" data-toggle="dropdown"><span class="glyphicon glyphicon-menu-hamburger"></span></button>
+					<ul id="myDropdown" class="dropdown-menu">
+						<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">About<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="mission.html">Our Mission</a></li>
+								<li><a href="staff.html"> Staff</a></li>
+							</ul>
+						</li>
+						<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Ministries<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="mens.html">Mens Ministry</a></li>
+								<li><a href="womens.html">Womens Ministry</a></li>
+								<li><a href="youth.html">Youth Ministry</a></li>
+							</ul>
+						</li>
+						<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Media<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="video.html">Video Gallery</a></li>
+								<li><a href="photo.html">Photo Gallery</a></li>
+							</ul>
+						</li>
+						<li><a href="contact.html">Contact</a></li>
+						<li><a href="prayer.html">Prayer Request</a></li>
+          			</ul>
+          			<ul class="mobile-give">
+       	 				<li><button class="btn btn-custom btn-lg" type="submit"><b>Give</b></button></li>
+       	 			</ul>
+			</div>
+
+			<!-- Mobile Crossroads Logo -->
+
+			<div class="container">
+			<!-- Begins Regular Nav -->
+
+				<div class="navbar-header">
+					<h3 class="logo-container">CROSSROADS UMC</h3>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Home</a></li>
+						<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="our-mission.html">Our Mission</a></li>
+								<li><a href="staff.html">Staff</a></li>
+							</ul>
+						</li>
+						<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ministries<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="mens.html">Mens Ministry</a></li>
+								<li><a href="womens.html">Womens Ministry</a></li>
+								<li><a href="youth.html">Youth Ministry</a></li>
+							</ul>
+						</li>
+						<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Media<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="photogallerys.html">Photo Galleries</a></li>
+								<li><a href="video.html">Video Galleries</a></li>
+							</ul>
+						</li>
+						<li><a href="contact.html">Contact</a></li>
+						<li><a href="prayer.html">Prayer Request</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+       	 				<li><button class="btn btn-custom btn-lg" type="submit"><b>Give</b></button></li>
+          			</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+	
+	<div class="container-fluid module-container">
+		<div class="row parallax-title-container parallax-holder contact-parallax">
+			<div class="col-lg-6 col-lg-offset-3">
+				<h1 class="text-center special-header title-align">Contact Us</h1>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-6 col-lg-offset-3 inner-form">
+				<form method="post" action="contact.php" class="form-horizontal" role="form">
+					<div class="form-group">
+						<label class="control-label col-sm-3">Subject</label>
+						<div class="col-sm-3">
+							<select class="form-control" name="contactSubject">
+								<option>New Member</option>
+								<option>Rent Facilities</option>
+								<option>Other</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-3">First Name</label>
+						<div class="col-sm-3">
+							<input type="text" class="form-control" placeholder="Jane" name="senderFname">
+						</div>
+						<label class="control-label col-sm-3">Last Name</label>
+						<div class="col-sm-3">
+							<input type="text" class="form-control" placeholder="Doe" name="senderLname">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-3">Address</label>
+						<div class="col-sm-6">
+							<input type="text" class="form-control" placeholder="111 Avalon St. #213" name="address">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-3">City</label>
+						<div class="col-sm-2">
+							<input type="text" class="form-control" placeholder="Compton" name="city">
+						</div>
+						<label class="control-label col-sm-1">State</label>
+						<div class="col-sm-2">
+							<input type="text" class="form-control" placeholder="CA" name="state">
+						</div>
+						<label class="control-label col-sm-2">Zip Code</label>
+						<div class="col-sm-2">
+							<input type="text" class="form-control" placeholder="90220" name="zip">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-3">Phone Number</label>
+						<div class="col-sm-4">
+							<input type="text" class="form-control" placeholder="xxx-xxx-xxxx" name="pnumber">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-3">E-Mail Address</label>
+						<div class="col-sm-6">
+							<input type="text" class="form-control" placeholder="jondoe@gmail.com" name="senderEmail">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-offset-3 col-sm-9">
+							<button type="submit" class="btn btn-custom" name="submit">Submit</button>
+							<?=$thankYou ?>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="row module">
+			<div class="col-lg-4 col-lg-offset-1">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.054538608516!2d-118.2408639848323!3d33.91399588064381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2cba5185bc895%3A0x561f34cd0d993121!2sCrossroads+United+Methodist!5e0!3m2!1sen!2sus!4v1471486940452" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid box-shadow-footer">
+	<!-- Footer -->
+		<footer class="row">
+
+		<!-- Contact Info and Logo -->
+			<div class="col-lg-2 col-md-3 col-sm-4 col-xs-8 text-center">
+				<img src="images/crossroads-logo.png" alt="Crossroads UMC Logo">
+				<address>
+					<p><b>Address</b> <br/>
+					2354 N. Wilmington Ave <br/>
+					Compton, CA 90222</p>
+				</address>
+				<p><b>Office Hours</b><br/>
+				Monday, Wednesday and Friday<br/>
+				9:00am - 1:00pm</p>
+				<p><b>Phone Number</b><br/>
+				(310)639-3136</p>
+			</div>
+
+		<!-- footer nav -->
+			<div id="footer-nav-container" class="col-lg-4 col-md-4 col-sm-4 text-center">
+				<div class="col-md-6 col-sm-6">
+					<ul class="footer-nav footer-inner">
+						<li><a href="our-mission.html">Our Mission</a></li>
+						<li><a href="staff.html">Staff</a></li>
+						<li><a href="youth.html">Youth Ministry</a></li>
+						<li><a href="mens.html">Mens Ministry</a></li>
+						<li><a href="womens.html">Womens Ministry</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6">
+					<ul class="footer-nav footer-inner">
+						<li><a href="video.html">Video Galleries</a></li>
+						<li><a href="photo.html">Photo Galleries</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li><a href="prayer.html">Prayer Request</a></li>
+					</ul>
+				</div>
+			</div>
+
+		<!-- About Crossroads -->
+			<div id="theme" class="col-lg-3 col-md-3 col-sm-5 col-xs-4 text-center">
+				<div class="footer-inner">
+					<h3 class="peach-font">Crossroads 2016 Theme</h3>
+					<h4 class="peach-font">Matthew 25:44-45</h4>
+					<p><b>44</b> They also will answer, 'Lord, when did we see you hungry or thirsty or a stranger needing clothes or sick or in prison, and did not help you?' <b>45</b> 'He will reply, Truly I tell you, whatever you did not do for one of the least of these; you did not do for me.'(NIV)</p> 
+				</div>
+			</div>
+
+		<!-- Social Icons -->
+			<div class="col-lg-3 col-md-2 col-sm-3 col-xs-4 text-center">
+				<div class="row last-module">
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-3 footer-inner">
+						<button class="btn btn-lg btn-custom">Tithes</button>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 img-mob-container">
+						<img class="img" src="images/facebook-icon.png" alt="Facebook Icon">
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 img-mob-container">
+						<img class="img" src="images/twitter-icon.png" alt="Twitter Icon">
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+						<img class="img" src="images/instagram-icon.png" alt="Instagram Icon">
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+						<img class="img" src="images/google-icon.png" alt="Google Plus Icon">
+					</div>
+				</div>
+			</div>
+			<div class="row text-center">
+				<div class="col-lg-12 col-xs-12">
+					<p class="gray-font">Copyright &copy; 2016 Thomas Anderson All rights reserved</p>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+</body>
+</html>

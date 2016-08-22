@@ -1,0 +1,547 @@
+@charset "utf-8";
+
+@import 'https://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans';
+
+html, body {
+	height: 100%;
+	font-size: 16px;
+	font-color: #101010;
+}
+
+body {
+	font-family: 'open sans', arial, sans-serif;
+	background-color: #f9f9f9;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'bree serif', arial, courier, serif;
+	color: #443266;
+	padding-bottom: 15px;
+}
+
+.special-header {
+	font-size: 40px;
+	color: #f8f8f8;
+	line-height: 1.5;
+}
+
+nav {
+	font-size: 16px;
+}
+
+/* CSS from Bootstrap */
+
+.nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
+	background-color: #443266;
+}
+.dropdown-menu {
+  background-color: #f1f0ff;
+}
+.dropdown-menu .divider {
+	background-color: #e5e5e5;
+}
+
+.dropdown-menu > li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.42857143;
+  color: #443266;
+  white-space: nowrap;
+  font-size: 16px;
+}
+
+.dropdown-menu > li > a:focus,
+.dropdown-menu > li > a:hover {
+  color: #fc9870;
+  text-decoration: none;
+  background-color: #443266 !important;
+}
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+  color: #fc9870;
+  text-decoration: none;
+  background-color: #443266;
+  outline: 0;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background-color: #443266;
+  color: #fc9870;
+}
+
+/* My CSS */
+
+a {
+	color: #443266;
+	text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #fc9870;
+  text-decoration: none;
+}
+
+.logo-container {
+	margin-right: 50px
+}
+
+.module {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+.first-module {
+	margin-top: 100px;
+}
+
+.last-module {
+	padding-bottom: 100px;
+}
+
+.module-container {
+	padding-bottom: 50px;
+}
+
+.navbar-custom {
+	background-color: #f1f0ff;
+}
+
+.servicesbg {
+	background-color: #f1f0ff;
+}
+
+.box-shadow-preview {  
+    border-width: 1px; 
+    border-style: solid; 
+    border-color: #DDDDDD; 
+    border-radius: 0px; 
+    box-shadow: -3px 0px 10px 2px #777777, 3px 0px 10px 2px #777; 
+}
+
+.box-shadow-nav {  
+    border-width: 1px; 
+    border-style: solid; 
+    border-color: #DDDDDD; 
+    border-radius: 0px; 
+    box-shadow: 0px 10px 6px -6px #777777; 
+}
+
+.box-shadow-carousel {  
+    border-width: 1px; 
+    border-style: solid; 
+    border-color: #DDDDDD; 
+    border-radius: 0px; 
+    box-shadow: 0px 10px 6px -6px #777777; 
+    background-color: #443266;
+}
+
+.box-shadow-footer {  
+    border-width: 1px; 
+    border-style: solid; 
+    border-color: #DDDDDD; 
+    border-radius: 0px; 
+    box-shadow: 0px -10px 6px -6px #777777; 
+}
+
+.img {
+	border: 1px solid #fc9870;
+	border-radius: 5px;
+}
+
+.peach-font {
+	color: #fc9870;
+}
+
+.grey-font {
+	color: #f1f0ff;
+}
+
+.gray-font {
+	color: #888;
+}
+
+.btn {
+	font-size: 20px;
+}
+.btn-custom {
+  color: #fc9870;
+  background-color: #8c489f;
+  border: 2px solid #fc9870;
+}
+.btn-custom:focus,
+.btn-custom.focus {
+  color: #fc9870;
+  background-color: #443266;
+  border-color: #fc9870;
+}
+.btn-custom:hover {
+  color: #fc9870;
+  background-color: #443266;
+  border: 2px solid #fc9870;
+}
+
+/* Parallax backgrounds */
+
+.parallax-container {
+	height: 500px;
+}
+
+.parallax-title-container {
+	height: 300px;
+}
+
+.parallax-holder {
+	position: static;
+	padding: 0;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	background-position: center 0;
+	background-attachment: fixed;
+	overflow: hidden;
+}
+
+.home-parallax {
+	background-image: url(../images/dark-violet.jpg);
+	position: static;
+	padding: 0;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	background-position: center center;
+	background-attachment: fixed;
+	overflow: hidden;
+}
+
+.mens-sec-parallax {
+	background-image: url(../images/bible-quote.jpg);
+	position: static;
+	padding: 0;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	background-position: center center;
+	background-attachment: fixed;
+	overflow: hidden;
+}
+
+.womens-parallax {
+	background-image: url(../images/womens-header.jpeg);
+}
+
+.mission-parallax {
+	background-image: url(../images/clouds.jpe);
+}
+
+.staff-parallax {
+	background-image: url(../images/right-path.jpeg);
+}
+
+.mens-parallax {
+	background-image: url(../images/lion.jpeg);
+}
+
+.youth-parallax {
+	background-image: url(../images/youth-header.jpeg);
+}
+
+.contact-parallax {
+	background-image: url(../images/contact.jpg);
+}
+
+.photo-parallax {
+	background-image: url(../images/photo-header.jpe);
+}
+
+.prayer-parallax {
+	background-image: url(../images/prayer-header.jpe);
+}
+
+.hr-style {
+	border-top: 2px solid #443266;
+	width: 300px;
+	float: center;
+}
+
+.title-align {
+	padding-top: 140px;
+}
+
+/* Footer Styling */
+
+footer {
+	background-color: #443266;
+	border: 2px solid #ddd;
+	color: #f1f0ff;
+	padding: 25px 0;
+}
+
+.footer-inner {
+	padding-top: 50px;
+}
+
+footer > div > div > div > img:hover {
+	border: 2px solid #fc9870;
+}
+
+footer > div > div > .footer-nav > li {
+	padding: 10px;
+}
+
+footer > div > div > .footer-nav > li > a {
+	color: #fc9870;
+	opacity: .5;
+}
+
+footer > div > div > .footer-nav > li > a:hover {
+	opacity: 1;
+}
+
+.footer-nav {
+	list-style: none;
+}
+
+#mobile-nav {
+	display: none;
+}
+
+#mobileWelcome {
+	display: none;
+	height: 350px;
+}
+.carousel-caption {
+	bottom: 100px;
+}
+.overlay-bg {
+	background-color: #101010;
+	opacity: 0.6;
+}
+
+.inner-form {
+	margin-top: 100px;
+}
+
+.v-align {
+	padding-top: 20%;
+}
+
+.thumbnail:hover {
+	background-color: #f1f0ff;
+	border: 4px solid #fc9870;
+}
+
+/* Media Queries */
+
+@media (min-width: 1200px) {
+  #mobile-nav {
+  	display: none;
+  }
+  .desk-text {
+  	display: block;
+  }
+  .mob-text {
+  	display: none;
+  }
+  #mob-staff-content {
+  	display: none;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  	#mobile-nav {
+		display: none;
+	}
+	.img-mob-container {
+		margin-bottom: 10px;
+	}
+	#mobile-nav-content {
+		display: none;
+	}
+  .desk-text {
+  	display: block;
+  }
+  .mob-text {
+  	display: none;
+  }
+  #mob-staff-content {
+  	display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #mobile-nav {
+  	display: block;
+  }
+  #footer-nav-container {
+  	display: none;
+  }
+  #nav-bar {
+  	display: none;
+  }
+  .nav {
+  	display: none;
+  }
+  .navbar-header {
+  	display: none;
+  }
+  .navbar-custom {
+  	background-color: transparent;
+  }
+  .box-shadow-nav {
+  	border: 1px solid transparent;
+  	box-shadow: none;
+  }
+  .img-mob-container {
+		margin-bottom: 10px;
+	}
+	.dropdown-menu {
+		width: 100%;
+		text-align: center;
+	}
+	#mobileWelcome {
+		display: block;
+	}
+	.vertical {
+		margin-top: 120px;
+		background-color: #232323;
+		opacity: 0.6;
+		border-radius: 5px;
+	}
+	#myCarousel {
+		display: none;
+	}
+	.welcomebg {
+	background-image: url(../images/crossroads-sanctuary.jpg);
+	background-repeat: no-repeat;
+	background-color: transparent;
+	background-position: center center;
+	}
+	.mobile-give {
+		float: right;
+	}
+	#mobile-nav > .mobile-give {
+		list-style-type: none;
+	}
+	 #mobile-nav > ul > li {
+  	border-top: 1px solid #101010;
+  }
+  #mobile-nav > ul > li:first-child {
+  	border-top: 0;
+  }
+  #mobile-nav > ul > li > ul > li {
+  	border-top: 1px solid #101010;
+  }
+  #mobile-nav > ul > li > ul > li:first-child {
+  	border-top: 0;
+  }
+  .desk-text {
+  	display: block;
+  }
+  .mob-text {
+  	display: none;
+  }
+  #mob-staff-content {
+  	display: none;
+  }
+}
+@media (max-width: 767px) {
+    #mobile-nav {
+  	display: block;
+  }
+  #footer-nav-container {
+  	display: none;
+  }
+  #nav-bar {
+  	display: none;
+  }
+  .nav {
+  	display: none;
+  }
+  .navbar-header {
+  	display: none;
+  }
+  .navbar-custom {
+  	background-color: transparent;
+  }
+
+  .box-shadow-nav {
+  	border: 1px solid transparent;
+  	box-shadow: none;
+  }
+  .img-mob-container {
+		margin-bottom: 10px;
+	}
+	.dropdown-menu {
+		width: 100%;
+		text-align: center;
+	}
+	#myCarousel {
+		display: none;
+	}
+	#mobileWelcome {
+		display: block;
+		height: 300px;
+	}
+	.vertical {
+		margin-top: 100px;
+		background-color: #232323;
+		opacity: 0.6;
+		border-radius: 5px;
+	}
+	.welcomebg {
+	background-image: url(../images/crossroads-umc-sanctuary.jpg);
+	background-repeat: no-repeat;
+	background-color: transparent;
+	background-position: center center;
+	overflow: hidden;
+	}
+	#theme {
+		display: none;
+	}
+	.mobile-give {
+		float: right;
+	}
+	#mobile-nav > .mobile-give {
+		list-style-type: none;
+	}
+	 #mobile-nav > ul > li {
+  		border-top: 1px solid #101010;
+  	}
+  #mobile-nav > ul > li:first-child {
+  	border-top: 0;
+  }
+	#mobile-nav > ul > li > ul > li {
+  	border-top: 1px solid #101010;
+  }
+  #mobile-nav > ul > li > ul > li:first-child {
+  	border-top: 0;
+  }
+  .desk-text {
+  	display: none;
+  }
+  .mob-text {
+  	display: block;
+  }
+  .mob-text-center {
+  	text-align: center;
+  }
+  .mens-staticbg {
+	background-image: url(../images/bible-quote.jpg);
+	position: static;
+	padding: 0;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	background-position: center center;
+	background-attachment: local;
+	overflow: hidden;
+	}
+  #mob-staff-content {
+  	display: block;
+  }
+  #desk-staff-content {
+  	display: none;
+  }
+}

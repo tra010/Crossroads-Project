@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Crossroads United Methodist Church</title>
+
+	<!-- bootstrap theme -->
+	<link rel="stylesheet" href="css/bootstrap-theme.css">
+
+	<!-- bootstrap css -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+	<!-- crossroads css -->
+	<link type="text/css" rel="stylesheet" href="css/styles.css">
+	
+	<!-- javascript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<script type="text/javascript">
+    function myFunction() {
+    	document.getElementById("myDropdown").classList.toggle("show");
+    }
+    	window.onclick = function(event) {
+    		if (!event.target.matches('.dropbtn')) {
+
+    			var dropdowns = document.getElementsByClassName("dropdown-menu");
+    			var i;
+    			for (i = 0; i < dropdowns.length; i++) {
+    				var openDropdown = dropdowns[i];
+    				if (openDropdown.classList.contains('show')){
+    					openDropdown.classList.remove('show');
+    				}
+    			}
+    		}
+    	}
+    </script>
+
+</head>
+<body>
+	<div class="container-fluid">
+	<!-- Fixed Navigation -->
+		<nav class="navbar navbar-custom navbar-fixed-top box-shadow-nav">
+			
+		<!-- Mobile Nav Hamburger btn -->
+
+			<div id="mobile-nav" class="dropdown">
+				<button onclick="myFunction()" class="btn btn-custom btn-lg dropdown-toggle" type="button" data-toggle="dropdown"><span class="glyphicon glyphicon-menu-hamburger"></span></button>
+					<ul id="myDropdown" class="dropdown-menu">
+						<li><a href="index.html">Home</a></li>
+						<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">About<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="our-mission.html">Our Mission</a></li>
+								<li><a href="staff.html"> Staff</a></li>
+							</ul>
+						</li>
+						<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Ministries<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="mens.html">Mens Ministry</a></li>
+								<li><a href="womens.html">Womens Ministry</a></li>
+								<li><a href="youth.html">Youth Ministry</a></li>
+							</ul>
+						</li>
+						<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Media<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="video.html">Video Gallery</a></li>
+								<li><a href="photo.html">Photo Gallery</a></li>
+							</ul>
+						</li>
+						<li><a href="contact.html">Contact</a></li>
+						<li><a href="prayer.html">Prayer Request</a></li>
+          			</ul>
+          			<ul class="mobile-give">
+       	 				<li><button class="btn btn-custom btn-lg" type="submit"><b>Give</b></button></li>
+       	 			</ul>
+			</div>
+
+			<!-- Mobile Crossroads Logo -->
+
+			<div class="container">
+			<!-- Begins Regular Nav -->
+
+				<div class="navbar-header">
+					<h3 class="logo-container">CROSSROADS UMC</h3>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Home</a></li>
+						<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="our-mission.html">Our Mission</a></li>
+								<li><a href="staff.html">Staff</a></li>
+							</ul>
+						</li>
+						<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ministries<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="mens.html">Mens Ministry</a></li>
+								<li><a href="womens.html">Womens Ministry</a></li>
+								<li><a href="youth.html">Youth Ministry</a></li>
+							</ul>
+						</li>
+						<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Media<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="photo.html">Photo Galleries</a></li>
+								<li><a href="video.html">Video Galleries</a></li>
+							</ul>
+						</li>
+						<li><a href="contact.html">Contact</a></li>
+						<li><a href="prayer.html">Prayer Request</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+       	 				<li><button class="btn btn-custom btn-lg" type="submit"><b>Give</b></button></li>
+          			</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+	
+	<!-- Mobile Welcome Image -->
+		<div id="mobileWelcome" class="row welcomebg">
+			<div class="col-sm-4 col-sm-offset-4 col-xs-8 col-xs-offset-2 text-center">
+				<h2 class="vertical peach-font">Crossroads</br>
+					United Methodist Church</h2>
+			</div>
+		</div>
+
+	<!-- Carousel -->
+		<div id="myCarousel" class="carousel slide box-shadow-carousel" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class></li>
+				<li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+			</ol>
+			<div class="carousel-inner" role="listbox">
+				<div class="item">
+					<img class="first-slide center-block" src="images/sanctuary.jpg" alt="First slide">
+					<div class="container">
+						<div class="carousel-caption">
+							<h1 class="special-header">Crossroads</br>
+							United Methodist Church</h1>
+						</div>
+					</div>
+				</div>
+				<div class="item active">
+					<div class="overlay-bg">
+					<img class="second-slide center-block" src="images/prayer.jpeg" alt="Second slide">
+					</div>
+					<div class="container">
+						<div class="carousel-caption">
+							<h1 class=" special-header">Prayer Request</h1>
+							<h3 class="grey-font">Do you need someone to Pray with? Or to pray for you?</h3>
+							<p></br>
+								<a class="btn btn-lg btn-custom" href="prayer.html" role="button">Prayer Request</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+
+	<div class="container-fluid servicesbg module-container">
+	
+	<!-- Services -->
+		<div class="row">
+		<!-- Worship -->
+			<div class="col-lg-2 col-lg-offset-2 col-sm-3 col-xs-6 text-center module">
+				<img src="images/worship.png" alt="Alter">
+				<h2>Worship Service</h2>
+				<h3>Sundays</h3>
+				<h3>10:30am</h3>
+			</div>
+		<!-- Sunday school -->
+			<div class="col-lg-2 col-sm-3 col-xs-6 text-center module">
+				<img src="images/school.png" alt="Picture of a Man">
+				<h2>Sunday School</h2>
+				<h3>Sundays</h3>
+				<h3>9:30am</h3>
+			</div>
+		<!-- Bible Study -->
+			<div class="col-lg-2 col-sm-3 col-xs-6 text-center module">
+				<img src="images/bible.png" alt="King James Holy Bible">
+				<h2>Bible Study</h2>
+				<h3>Wednesdays</h3>
+				<h3>6:00pm</h3>
+			</div>
+		<!-- Prayer -->
+			<a href="#"><div class="col-lg-2 col-sm-3 col-xs-6 text-center module">
+				<img src="images/cross.png" alt="Picture of a woman">
+				<h2>Prayer</h2>
+				<h3>Every 2nd Tuesday</h3>
+				<h3>6:00pm</h3>
+			</div></a>
+		</div>
+
+		
+		<!-- Welcome Message -->
+			<div class="row paralax-container paralax-holder home-parallax">
+				<div class="col-lg-6 col-lg-offset-3 col-sm-8 col-sm-offset-2 col-xs-12 module">
+					<h1 class="text-center special-header">Our congregation is a Christian community where anyone is welcome. Join us every Sunday to worship, pray and to be disciples of God.</h1>
+				</div>
+			</div>
+	
+	<!-- Events & News -->
+		<div class="row">
+		
+			<div class="col-lg-12 col-sm-12 col-xs-12 module">
+			
+				<h1 class="text-center first-module"><a href="#">News and Events</a></h1>
+				<hr class="hr-style">
+			</div>
+			<!-- Backpack Giveaway Event -->
+
+			<div class="col-lg-4 col-sm-5 col-lg-offset-2 col-sm-offset-1 col-xs-12 last-module">
+				<a href="#"><img class="center-block img img-responsive" src="images/backpack.jpe" alt="Backpack give away"></a>
+				<h2 class="text-center"><a href="#">Backpack Give away</a></h2>
+				<h4 class="text-center">August 13 8:00am to 3:00pm</h4>
+				<p>Hello this is your train conductor. I'm here to take you to your destination. I hope you enjoy your ride with us, and please come again.</p>
+			</div>
+
+			<!-- Womans Day -->
+			<div class="col-lg-4 col-sm-5 col-xs-12">
+				<a href="#"><img class="center-block img img-responsive" src="images/womens-day.jpg" alt="Crossroads Women"></a>
+				<h2 class="text-center"><a href="#">Womens Day</a></h2>
+				<h4 class="text-center">September 11</h4>
+				<p>Hello this is your train conductor. I'm here to take you to your destination. I hope you enjoy your ride with us, and please come again.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid box-shadow-footer">
+	<!-- Footer -->
+		<footer class="row">
+
+		<!-- Contact Info and Logo -->
+			<div class="col-lg-2 col-md-3 col-sm-4 col-xs-8 text-center">
+				<img src="images/crossroads-logo.png" alt="Crossroads UMC Logo">
+				<address>
+					<p><b>Address</b> <br/>
+					2354 N. Wilmington Ave <br/>
+					Compton, CA 90222</p>
+				</address>
+				<p><b>Office Hours</b><br/>
+				Monday, Wednesday and Friday<br/>
+				9:00am - 1:00pm</p>
+				<p><b>Phone Number</b><br/>
+				(310)639-3136</p>
+			</div>
+
+		<!-- footer nav -->
+			<div id="footer-nav-container" class="col-lg-4 col-md-4 col-sm-4 text-center">
+				<div class="col-md-6 col-sm-6">
+					<ul class="footer-nav footer-inner">
+						<li><a href="our-mission.html">Our Mission</a></li>
+						<li><a href="staff.html">Staff</a></li>
+						<li><a href="youth.html">Youth Ministry</a></li>
+						<li><a href="mens.html">Mens Ministry</a></li>
+						<li><a href="womens.html">Womens Ministry</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6">
+					<ul class="footer-nav footer-inner">
+						<li><a href="video.html">Video Galleries</a></li>
+						<li><a href="photo.html">Photo Galleries</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li><a href="prayer.html">Prayer Request</a></li>
+					</ul>
+				</div>
+			</div>
+
+		<!-- About Crossroads -->
+			<div id="theme" class="col-lg-3 col-md-3 col-sm-5 col-xs-4 text-center">
+				<div class="footer-inner">
+					<h3 class="peach-font">Crossroads 2016 Theme</h3>
+					<h4 class="peach-font">Matthew 25:44-45</h4>
+					<p><b>44</b> They also will answer, 'Lord, when did we see you hungry or thirsty or a stranger needing clothes or sick or in prison, and did not help you?' <b>45</b> 'He will reply, Truly I tell you, whatever you did not do for one of the least of these; you did not do for me.'(NIV)</p> 
+				</div>
+			</div>
+
+		<!-- Social Icons -->
+			<div class="col-lg-3 col-md-2 col-sm-3 col-xs-4 text-center">
+				<div class="row last-module">
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-3 footer-inner">
+						<button class="btn btn-lg btn-custom">Tithes</button>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 img-mob-container">
+						<img class="img" src="images/facebook-icon.png" alt="Facebook Icon">
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 img-mob-container">
+						<img class="img" src="images/twitter-icon.png" alt="Twitter Icon">
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+						<img class="img" src="images/instagram-icon.png" alt="Instagram Icon">
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+						<img class="img" src="images/google-icon.png" alt="Google Plus Icon">
+					</div>
+				</div>
+			</div>
+			<div class="row text-center">
+				<div class="col-lg-12 col-xs-12">
+					<p class="gray-font">Copyright &copy; 2016 Thomas Anderson All rights reserved</p>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+</body>
+</html>
